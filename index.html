@@ -5,6 +5,16 @@
     <link href="site.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <!-- OneSignal Notifaction -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
+            appId: "60dacef4-e825-437d-b7d6-f66b714761ca",
+            });
+        });
+    </script>
     <title>Stitch of Wisdom</title>
 </head>
 
@@ -12,14 +22,12 @@
   <div class= "wrapper">
     <div class="head-nav">
         <a href="index.html"><img class="head-img" src="images/stitch-black.png"></a>
+        <div class="banner">
         <a class="nav-links" href="designs.html">Designs</a>
         <a class="nav-links" href="how-to.html">How-To</a>
         <a class="nav-links" href="about.html">About</a>
         <a class="nav-img-links" href="https://www.instagram.com/stitchofwisdom/" target="_blank"><img alt="instagram" src="images/insta.png" width="30"></a>
-    </div>
-
-    <div class="banner">
-        <h3>New Fall Patterns Have Arrived!</h3>
+        </div>
     </div>
         
     <!-- Slideshow container -->
@@ -27,15 +35,15 @@
 
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <img src="images/braver.jpg" style="width:100%">
+        <img class="slide-img" src="images/braver.jpg">
       </div>
 
       <div class="mySlides fade">
-        <img src="images/tree.jpg" style="width:100%">
+        <img class="slide-img" src="images/tree.jpg">
       </div>
 
       <div class="mySlides fade">
-        <img src="images/wear-mask.jpg" style="width:100%">
+        <img class="slide-img" src="images/wear-mask.jpg">
       </div>
 
         <div class="scroll-buttons">
@@ -46,7 +54,7 @@
 
     <div class="home-blurb">
       <h3>Tiny, simple movements repeated over long spans of time--the process and principles of stitching are meditative in nature. The tools are simple and few, with persistence and consistency superceding perfection. Flex your patience, persistence, and phalanges as you meditate on these mantras and create something pretty.</h3>
-      <h3>If you're new to stitching, congratulations on your new accessible and fulfilling hobby! Please enjoy these esasy patterns and check out the tips & tricks <a href="how-to.html">here</a> for a quick-start guide.</h3>
+      <h3>If you're new to stitching, congratulations on your new, accessible, and fulfilling hobby! Please enjoy these esasy patterns and check out the tips & tricks <a href="how-to.html">here</a> for a quick-start guide.</h3>
     </div>
     <div class="push"></div>
   </div>
